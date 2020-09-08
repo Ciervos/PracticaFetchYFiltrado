@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 
 function Navbar(props) {
 
-  const [filtrado,setFiltrado] = useState("");
+  const [filtrado,setFiltrado] = useState([]);
 
   function handleChange(event) {
   

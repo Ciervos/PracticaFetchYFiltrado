@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import List from './components/List';
 
 function App() {
- const [txt,setTxt] = useState([]);
+ const [txt,setTxt] = useState("");
 
   function handleFilter(info){
    setTxt(info);

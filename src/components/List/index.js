@@ -20,12 +20,14 @@ function List(props) {
       setAuris(dataJson.results);
       
     }
- 
+
 
   return (
      <ul>
      {auris.filter((obj) =>{
-       return(obj.title.includes(props.info))
+       return(obj.title
+        .toLowerCase()
+        .includes(props.info.toLowerCase()))
      }).map((obj, key) => {
        return (
           <Item name={obj.title} foto={obj.thumbnail} key={obj.id ? obj.id:key}/>
